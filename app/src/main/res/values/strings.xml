@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">All_In_One</string>
+    <string name="log_in">Log In</string>
+    <string name="name">Name</string>
+    <string name="passord">Passord</string>
+    <string name="forgot_passord">Forgot passord</string>
+    <string name="todo">TODO</string>
 </resources>

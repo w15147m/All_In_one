@@ -9,10 +9,18 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
   Toolbar toolbar;
+    MaterialButton button;
+
+  EditText password , textname;
 
 //    @SuppressLint("RestrictedApi")
     @Override
@@ -20,6 +28,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toolbar = findViewById(R.id.toolbar);
+        textname = findViewById(R.id.editTextText);
+       password = findViewById(R.id.editpass);
+        button  = findViewById(R.id.loginbtn);
+
+//       admin and admin
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(textname.getText().toString().equals("admin") && password.getText().toString().equals("admin12345") ){
+
+//                    Toast.makeText(this, "profile", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "now you are login", Toast.LENGTH_SHORT).show();
+                }
+                else {
+
+                    Toast.makeText(MainActivity.this, "user name or password is incorrect ", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
 
 //        step 1
 
