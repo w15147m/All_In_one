@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -40,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
                 if(textname.getText().toString().equals("admin") && password.getText().toString().equals("admin12345") ){
 
 //                    Toast.makeText(this, "profile", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(MainActivity.this, "now you are login", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(MainActivity.this, "now you are login", Toast.LENGTH_SHORT).show();
+
+                    Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 }
                 else {
 
@@ -73,24 +76,24 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int itemid = item.getItemId();
-
-        if(itemid==R.id.profile){
-
-            Toast.makeText(this, "profile", Toast.LENGTH_SHORT).show();
-        }else if(itemid==R.id.newtab){
-
-            Toast.makeText(this, "new", Toast.LENGTH_SHORT).show();
-        }else if(itemid==R.id.history){
-
-            Toast.makeText(this, "history", Toast.LENGTH_SHORT).show();
-        } else if(itemid==R.id.setting){
-
-            Toast.makeText(this, "setting", Toast.LENGTH_SHORT).show();
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+//        int itemid = item.getItemId();
+//
+//        if(itemid==R.id.profile){
+//
+//            Toast.makeText(this, "profile", Toast.LENGTH_SHORT).show();
+//        }else if(itemid==R.id.newtab){
+//
+//            Toast.makeText(this, "new", Toast.LENGTH_SHORT).show();
+//        }else if(itemid==R.id.history){
+//
+//            Toast.makeText(this, "history", Toast.LENGTH_SHORT).show();
+//        } else if(itemid==R.id.setting){
+//
+//            Toast.makeText(this, "setting", Toast.LENGTH_SHORT).show();
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 }
