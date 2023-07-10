@@ -12,6 +12,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +21,7 @@ import com.google.android.material.button.MaterialButton;
 public class MainActivity extends AppCompatActivity {
   Toolbar toolbar;
     MaterialButton button;
+    ImageView facebook;
 
   EditText password , textname;
 
@@ -32,18 +34,24 @@ public class MainActivity extends AppCompatActivity {
         textname = findViewById(R.id.editTextText);
        password = findViewById(R.id.editpass);
         button  = findViewById(R.id.loginbtn);
+        facebook = findViewById(R.id.facebook);
 
 //       admin and admin
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+
+
                 if(textname.getText().toString().equals("admin") && password.getText().toString().equals("admin12345") ){
 
-//                    Toast.makeText(this, "profile", Toast.LENGTH_SHORT).show();
-//                    Toast.makeText(MainActivity.this, "now you are login", Toast.LENGTH_SHORT).show();
 
+//                    Toast.makeText(MainActivity.this, "now you are login", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+
+                    startActivity(intent);
+
                 }
                 else {
 
@@ -51,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
 
 
 //        step 1
@@ -76,24 +85,24 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        int itemid = item.getItemId();
-//
-//        if(itemid==R.id.profile){
-//
-//            Toast.makeText(this, "profile", Toast.LENGTH_SHORT).show();
-//        }else if(itemid==R.id.newtab){
-//
-//            Toast.makeText(this, "new", Toast.LENGTH_SHORT).show();
-//        }else if(itemid==R.id.history){
-//
-//            Toast.makeText(this, "history", Toast.LENGTH_SHORT).show();
-//        } else if(itemid==R.id.setting){
-//
-//            Toast.makeText(this, "setting", Toast.LENGTH_SHORT).show();
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int itemid = item.getItemId();
+
+        if(itemid==R.id.profile){
+
+            Toast.makeText(this, "profile", Toast.LENGTH_SHORT).show();
+        }else if(itemid==R.id.newtab){
+
+            Toast.makeText(this, "new", Toast.LENGTH_SHORT).show();
+        }else if(itemid==R.id.history){
+
+            Toast.makeText(this, "history", Toast.LENGTH_SHORT).show();
+        } else if(itemid==R.id.setting){
+
+            Toast.makeText(this, "setting", Toast.LENGTH_SHORT).show();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 }
