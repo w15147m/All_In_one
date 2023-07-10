@@ -34,7 +34,7 @@
         android:text="Grid View"
         android:layout_gravity="center"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:textSize="40dp"
 
         android:gravity="center">
@@ -43,7 +43,7 @@
 
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="400dp"
                 android:rowCount="3"
         android:columnCount="2"
         android:layout_margin="10dp"
@@ -76,7 +76,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="20dp"
-                    android:src="@drawable/google"
+                    android:src="@drawable/img"
                     android:layout_gravity="center_horizontal"
                     ></ImageView>
                 <TextView
@@ -130,7 +130,7 @@
                     android:layout_height="100dp"
                     android:layout_marginTop="20dp"
 
-                    android:src="@drawable/google"
+                    android:src="@drawable/img_2"
                    android:layout_gravity="center_horizontal"
                     ></ImageView>
                 <TextView
@@ -162,6 +162,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="5dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
 
             android:layout_rowWeight="1"
             android:layout_row="1"
@@ -180,7 +181,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="20dp"
-                    android:src="@drawable/google"
+                    android:src="@drawable/img_4"
                     android:layout_gravity="center_horizontal"
                     ></ImageView>
                 <TextView
@@ -212,7 +213,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="5dp"
             android:layout_marginTop="20dp"
-
+    android:layout_marginBottom="40dp"
             android:layout_rowWeight="1"
             android:layout_row="1"
             android:layout_column="0"
@@ -233,7 +234,7 @@
 
 
 
-                    android:src="@drawable/google"
+                    android:src="@drawable/img_5"
                     android:layout_gravity="center_horizontal"
                     ></ImageView>
                 <TextView

@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="Profile"
-        android:icon="@drawable/user"
-        android:id="@+id/profile"
-       app:showAsAction="never"
-        />
-    <item android:title="App History"
+
+    <item android:title="S_R_L_View"
         android:id="@+id/history"
         android:icon="@drawable/baseline_history_24"/>
 
-    <item android:title="new tab"
+    <item android:title="Player"
         android:icon="@drawable/baseline_fiber_new_24"
         android:id="@+id/newtab"
         />
-    <item android:title="Setting"
+    <item android:title="Calculator"
         android:id="@+id/setting"
         android:icon="@drawable/settings"
+        />
+    <item android:title="Log out"
+        android:icon="@drawable/user"
+        android:id="@+id/profile"
+        app:showAsAction="never"
         />
 </menu>
