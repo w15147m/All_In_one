@@ -13,7 +13,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity2 extends AppCompatActivity {
+import com.example.all_in_one.C_C_T_view.CCTView;
+import com.example.all_in_one.R_S_L.S_R_L_View;
+import com.example.all_in_one.V_A_player.avplayer;
+import com.example.all_in_one.fooddata.fdata;
+
+public class
+
+MainActivity2 extends AppCompatActivity {
     Toolbar toolbar;
     CardView cardView1 , cardView2 , cardView3 , cardView4;
     @Override
@@ -30,6 +37,7 @@ public class MainActivity2 extends AppCompatActivity {
         setSupportActionBar(toolbar);
         if(getSupportActionBar()!=null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         }
         getSupportActionBar().setSubtitle("Home page");
 
@@ -42,15 +50,41 @@ public class MainActivity2 extends AppCompatActivity {
 //                   Toast.makeText(MainActivity2.this, "ali mola", Toast.LENGTH_SHORT).show();
                }
            });
+        cardView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this , CCTView.class);
+                startActivity(intent);
+//                   Toast.makeText(MainActivity2.this, "ali mola", Toast.LENGTH_SHORT).show();
+            }
+        });
+        cardView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this , avplayer.class);
+                startActivity(intent);
+//                   Toast.makeText(MainActivity2.this, "ali mola", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
-
-
+        cardView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this , fdata.class);
+                startActivity(intent);
+//                   Toast.makeText(MainActivity2.this, "ali mola", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 
 
     }
+
+
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         new MenuInflater(this).inflate(R.menu.opt_menu,menu);
@@ -67,8 +101,9 @@ public class MainActivity2 extends AppCompatActivity {
             Intent intent = new Intent(MainActivity2.this , MainActivity.class);
             startActivity(intent);
         }else if(itemid==R.id.newtab){
-
-            Toast.makeText(this, "new", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity2.this , avplayer.class);
+            startActivity(intent);
+//            Toast.makeText(this, "new", Toast.LENGTH_SHORT).show();
         }else if(itemid==R.id.history){
             Intent intent = new Intent(MainActivity2.this , S_R_L_View.class);
             startActivity(intent);
@@ -76,8 +111,9 @@ public class MainActivity2 extends AppCompatActivity {
 
 
         } else if(itemid==R.id.setting){
-
-            Toast.makeText(this, "setting", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity2.this , fdata.class);
+            startActivity(intent);
+//            Toast.makeText(this, "setting", Toast.LENGTH_SHORT).show();
         }
 
         return super.onOptionsItemSelected(item);

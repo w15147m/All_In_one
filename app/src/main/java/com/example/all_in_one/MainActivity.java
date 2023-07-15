@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,7 +12,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
@@ -90,17 +88,17 @@ public class MainActivity extends AppCompatActivity {
         int itemid = item.getItemId();
 
         if(itemid==R.id.profile){
-
-            Toast.makeText(this, "profile", Toast.LENGTH_SHORT).show();
+Intent intent = new Intent(MainActivity.this , MainActivity.class);
+//            Toast.makeText(this, "log in please", Toast.LENGTH_SHORT).show();
         }else if(itemid==R.id.newtab){
 
-            Toast.makeText(this, "new", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "log in please", Toast.LENGTH_SHORT).show();
         }else if(itemid==R.id.history){
 
-            Toast.makeText(this, "history", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "log in please", Toast.LENGTH_SHORT).show();
         } else if(itemid==R.id.setting){
 
-            Toast.makeText(this, "setting", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "log in please", Toast.LENGTH_SHORT).show();
         }
 
         return super.onOptionsItemSelected(item);
