@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 
 public class listview extends Fragment {
-
+    ListView listView;
     ArrayList<String> arrname = new ArrayList<>();
     public listview() {
         // Required empty public constructor
@@ -27,9 +27,10 @@ public class listview extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_listview, container, false);
-        ListView listView =view.findViewById(R.id.listview);
-            arrname.add("ali");
-            arrname.add("muhammad");
+      listView =view.findViewById(R.id.listview);
+        arrname.add("ali");
+        arrname.add("muhammad");
+        arrname.add("muhammad");
         arrname.add("muhammad");
         arrname.add("muhammad");
         arrname.add("muhammad");
@@ -51,8 +52,8 @@ public class listview extends Fragment {
 // ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.activity_list_item,arrname);
 //        listView.setAdapter(adapter);
 
-//        ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplicationContext() , android.R.layout.simple_list_item_1  , arrname );
-//        listView1.setAdapter(adapter);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity() , android.R.layout.simple_list_item_1  , arrname );
+        listView.setAdapter(adapter);
 
         return view;
     }
