@@ -52,7 +52,6 @@ public class S_R_L_View extends AppCompatActivity {
     public  void  load(Fragment fragment ,int num){
 
 
-
         FragmentManager fgscroll = getSupportFragmentManager();
         FragmentTransaction tscroll =  fgscroll.beginTransaction();
 

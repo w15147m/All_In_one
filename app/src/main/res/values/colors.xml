@@ -2,4 +2,17 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="whit">#F44336</color>
+    <color name="whte">#E91E63</color>
+    <color name="whie">#9C27B0</color>
+    <color name="ite">#FF5722</color>
+    <color name="wgite">#FF9800</color>
+    <color name="wiste">#FFC107</color>
+    <color name="wixte">#FFC107</color>
+    <color name="wicvte">#FFEB3B</color>
+    <color name="wite">#8BC34A</color>
+    <color name="wizcte">#4CAF50</color>
+    <color name="wizzxcte">#009688</color>
+    <color name="wizzcte">#2196F3</color>
+    <color name="wizcxte">#3F51B5</color>
 </resources>
