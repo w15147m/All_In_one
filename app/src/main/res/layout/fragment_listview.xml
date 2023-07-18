@@ -8,12 +8,11 @@
     tools:context=".R_S_L.listview">
 
     <ListView
+        android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listview"
         android:background="#AD399EEF"
-        tools:ignore="MissingConstraints"
-        ></ListView>
+        tools:ignore="MissingConstraints"></ListView>
 
 
 </LinearLayout>

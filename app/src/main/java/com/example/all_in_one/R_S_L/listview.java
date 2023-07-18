@@ -52,8 +52,8 @@ public class listview extends Fragment {
 // ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.activity_list_item,arrname);
 //        listView.setAdapter(adapter);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity() , android.R.layout.simple_list_item_1  , arrname );
-        listView.setAdapter(adapter);
+//        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity() , android.R.layout.simple_list_item_1  , arrname );
+//        listView.setAdapter(adapter);
 
         return view;
     }

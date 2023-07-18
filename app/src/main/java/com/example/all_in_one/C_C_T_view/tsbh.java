@@ -7,53 +7,122 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.all_in_one.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link tsbh#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class tsbh extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    View view;
+    Button btnc;
+    TextView t1, t2, t3, t4;
+    int a = 0;
+    int b = 0;
+    int c = 0;
+    int countbtn = 0;
+    int counttotal = 0;
 
     public tsbh() {
         // Required empty public constructor
     }
 
-
-    // TODO: Rename and change types and number of parameters
-    public static tsbh newInstance(String param1, String param2) {
-        tsbh fragment = new tsbh();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        view = inflater.inflate(R.layout.fragment_tsbh, container, false);
+
+        btnc = view.findViewById(R.id.btnc);
+        t1 = view.findViewById(R.id.t1);
+        t2 = view.findViewById(R.id.t2);
+        t3 = view.findViewById(R.id.t3);
+        t4 = view.findViewById(R.id.t4);
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tsbh, container, false);
+
+
+//        t3.setText(String.valueOf(Ncount()));
+
+
+        btnc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (countbtn < 101) {
+                btnc.setText(String.valueOf(btncount()));
+                t4.setText(String.valueOf(totqlcount()));
+
+                if (a < 34) {
+
+                    t1.setText(String.valueOf(t1count()));
+
+                } else if (b < 33) {
+
+                    t2.setText(String.valueOf(t2count()));
+
+                } else if (c < 33) {
+
+                    t3.setText(String.valueOf(t3count()));
+
+                } else if (counttotal < 101) {
+
+                    t3.setText(String.valueOf(totqlcount()));
+
+                }else {
+
+                      Toast.makeText(getActivity(), "مکمل بوا", Toast.LENGTH_SHORT).show();
+
+
+
+                }
+
+                }else {
+
+                    Toast.makeText(getActivity(), "مکمل بوا", Toast.LENGTH_SHORT).show();
+
+
+
+                }
+            }
+        });
+
+
+        return view;
+
     }
+
+    public int t1count() {
+        a++;
+//        Toast.makeText(getActivity(), "ali mola", Toast.LENGTH_SHORT).show();
+        return a;
+    }
+
+    public int t2count() {
+        b++;
+//        Toast.makeText(getActivity(), "ali mola", Toast.LENGTH_SHORT).show();
+        return b;
+    }
+
+    public int t3count() {
+        c++;
+//        Toast.makeText(getActivity(), "ali mola", Toast.LENGTH_SHORT).show();
+        return c;
+    }
+
+    public int totqlcount() {
+        counttotal++;
+//        Toast.makeText(getActivity(), "ali mola", Toast.LENGTH_SHORT).show();
+        return counttotal;
+    }
+
+    public int btncount() {
+        countbtn++;
+//        Toast.makeText(getActivity(), "ali mola", Toast.LENGTH_SHORT).show();
+        return countbtn;
+    }
+
+
 }

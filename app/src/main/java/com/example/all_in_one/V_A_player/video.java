@@ -28,22 +28,15 @@ public class video extends Fragment {
       View view= inflater.inflate(R.layout.fragment_video, container, false);
 
         VideoView videoView = view.findViewById(R.id.videoview);
-        VideoView videoView1 = view.findViewById(R.id.videoview1);
 //        videoView = findViewById(R.id.video);
 
         String videopath ="android.resource://"+ getContext().getPackageName() + "/" +R.raw.mola;
-        String videopath1 ="android.resource://"+ getContext().getPackageName() + "/" +R.raw.mola;
         Uri uri = Uri.parse(videopath);
-        Uri uri1 = Uri.parse(videopath1);
         videoView.setVideoURI(uri);
-        videoView.setVideoURI(uri1);
 
         MediaController mediaController = new MediaController(getContext());
-        MediaController mediaController1 = new MediaController(getContext());
         videoView.setMediaController(mediaController);
-        videoView.setMediaController(mediaController1);
         mediaController.setAnchorView(videoView);
-        mediaController.setAnchorView(videoView1);
 
 
 
