@@ -1,5 +1,6 @@
 package com.example.all_in_one.fooddata;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.all_in_one.R;
 
@@ -41,10 +43,18 @@ EditText editTextname , editTextemail  , editTextphone;
             @Override
             public void onClick(View v) {
 
-                Bundle result = new Bundle();
-                result.putString("name",editTextname.getText().toString());
-               getParentFragmentManager().setFragmentResult("data",result);
-               editTextname.setText("");
+                String name = editTextname.getText().toString();
+                String email = editTextemail.getText().toString();
+                String phone = editTextphone.getText().toString();
+
+                Intent intent = new Intent(getActivity(), getdata.class);
+                intent.putExtra("name" , name);
+                intent.putExtra("phone" , phone);
+                intent.putExtra("email" , email);
+                startActivity(intent);
+
+
+//                Toast.makeText(getActivity(), phone, Toast.LENGTH_SHORT).show();
 
 
             }
