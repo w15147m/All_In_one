@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                if(textname.getText().toString().equals("admin") && password.getText().toString().equals("admin12345") ){
+                if(textname.getText().toString().equals("admin") && password.getText().toString().equals("admin") ){
 
 
 //                    Toast.makeText(MainActivity.this, "now you are login", Toast.LENGTH_SHORT).show();

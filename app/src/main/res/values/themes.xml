@@ -6,4 +6,11 @@
     </style>
 
     <style name="Theme.All_In_One" parent="Base.Theme.All_In_One" />
+    <style name="roundomageview"  parent=""
+        >
+        <item name="cornerFamily">rounded</item>
+        <item name="collapsedSize">20dp</item>
+        <item name="color">@color/ic_launcher_background</item>
+
+    </style>
 </resources>

@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Header"
-            android:textSize="40dp"
+              android:textSize="20dp"
             android:layout_margin="10dp"
             android:textStyle="bold"
             android:layout_marginLeft="20dp"

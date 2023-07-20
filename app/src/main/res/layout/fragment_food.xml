@@ -6,318 +6,374 @@
     android:layout_height="match_parent"
     android:background="@drawable/imagesback"
     android:orientation="vertical"
+    android:paddingTop="20dp"
     tools:context=".fooddata.food"
     tools:ignore="SpeakableTextPresentCheck">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:cardCornerRadius="25dp"
-        app:cardElevation="10dp">
+        android:layout_margin="3dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:scaleType="fitXY"
 
             android:src="@drawable/num1"></ImageView>
+
     </androidx.cardview.widget.CardView>
-
-    <HorizontalScrollView
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food Types"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="40dp"
+        android:textColor="#0170C8"
+        />
+    <RadioGroup
         android:layout_width="wrap_content"
-        android:layout_height="500dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="500dp">
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="200dp"
-                android:layout_height="350dp"
-                android:layout_margin="5dp"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/num5"
-                        android:scaleType="fitStart"></ImageView>
-
-                    <TextView
-                        android:layout_width="160dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:text="Food_c"
-                        android:textSize="30dp"
-                        android:textStyle="bold"></TextView>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
 
 
-                </LinearLayout>
+        >
 
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="200dp"
-                android:layout_height="350dp"
-                android:layout_margin="5dp"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/num4"
-                        android:scaleType="fitStart"></ImageView>
-
-                    <TextView
-                        android:layout_width="160dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:text="Food_b"
-                        android:textSize="30dp"
-                        android:textStyle="bold"></TextView>
+        <RadioButton
+            android:id="@+id/vag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/vegetable_1"
+            android:padding="20dp"
+            android:text="  Veg"
+            android:textSize="15dp" />
 
 
-                </LinearLayout>
+        <RadioButton
+            android:id="@+id/nonvage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/nonvag_1_removebg_preview"
+            android:padding="20dp"
+            android:text=" non Veg"
+            android:textSize="20dp" />
 
-            </androidx.cardview.widget.CardView>
+        <RadioButton
+            android:id="@+id/drinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/beverage"
+            android:padding="20dp"
+            android:text="drinks"
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="200dp"
-                android:layout_height="350dp"
-                android:layout_margin="5dp"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
+            android:textSize="20dp" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
+    </RadioGroup>
 
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/num6"
-                        android:scaleType="fitStart"></ImageView>
-
-                    <TextView
-                        android:layout_width="160dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:text="Food_c"
-                        android:textSize="30dp"
-                        android:textStyle="bold"></TextView>
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="200dp"
-                android:layout_height="350dp"
-                android:layout_margin="5dp"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/num1"
-                        android:scaleType="fitStart"></ImageView>
-
-                    <TextView
-                        android:layout_width="160dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:text="Food_d"
-                        android:textSize="30dp"
-                        android:textStyle="bold"></TextView>
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="200dp"
-                android:layout_height="350dp"
-                android:layout_margin="5dp"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/num2"
-                        android:scaleType="fitStart"></ImageView>
-
-                    <TextView
-                        android:layout_width="160dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:text="Food_e"
-                        android:textSize="30dp"
-                        android:textStyle="bold"></TextView>
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="200dp"
-                android:layout_height="350dp"
-                android:layout_margin="5dp"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/num3"
-                        android:scaleType="fitStart"></ImageView>
-
-                    <TextView
-                        android:layout_width="160dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:text="Food_a"
-                        android:textSize="30dp"
-                        android:textStyle="bold"></TextView>
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="200dp"
-                android:layout_height="350dp"
-                android:layout_margin="5dp"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/num3"
-                        android:scaleType="fitStart"></ImageView>
-
-                    <TextView
-                        android:layout_width="160dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:text="Food_a"
-                        android:textSize="30dp"
-                        android:textStyle="bold"></TextView>
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="200dp"
-                android:layout_height="350dp"
-                android:layout_margin="5dp"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="300dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/num3"
-                        android:scaleType="fitStart"></ImageView>
-
-                    <TextView
-                        android:layout_width="160dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:text="Food_a"
-                        android:textSize="30dp"
-                        android:textStyle="bold"></TextView>
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-        </LinearLayout>
-
-
-    </HorizontalScrollView>
 
 
 </LinearLayout>
+
+
+    <!--    <HorizontalScrollView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="500dp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="500dp">-->
+
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="350dp"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="200dp"-->
+    <!--                        android:layout_height="300dp"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:background="@drawable/num5"-->
+    <!--                        android:scaleType="fitStart"></ImageView>-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="160dp"-->
+    <!--                        android:layout_height="match_parent"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Food_c"-->
+    <!--                        android:textSize="30dp"-->
+    <!--                        android:textStyle="bold"></TextView>-->
+
+
+    <!--                </LinearLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="350dp"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="200dp"-->
+    <!--                        android:layout_height="300dp"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:background="@drawable/num4"-->
+    <!--                        android:scaleType="fitStart"></ImageView>-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="160dp"-->
+    <!--                        android:layout_height="match_parent"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Food_b"-->
+    <!--                        android:textSize="30dp"-->
+    <!--                        android:textStyle="bold"></TextView>-->
+
+
+    <!--                </LinearLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="350dp"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="200dp"-->
+    <!--                        android:layout_height="300dp"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:background="@drawable/num6"-->
+    <!--                        android:scaleType="fitStart"></ImageView>-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="160dp"-->
+    <!--                        android:layout_height="match_parent"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Food_c"-->
+    <!--                        android:textSize="30dp"-->
+    <!--                        android:textStyle="bold"></TextView>-->
+
+
+    <!--                </LinearLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="350dp"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="200dp"-->
+    <!--                        android:layout_height="300dp"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:background="@drawable/num1"-->
+    <!--                        android:scaleType="fitStart"></ImageView>-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="160dp"-->
+    <!--                        android:layout_height="match_parent"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Food_d"-->
+    <!--                        android:textSize="30dp"-->
+    <!--                        android:textStyle="bold"></TextView>-->
+
+
+    <!--                </LinearLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="350dp"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="200dp"-->
+    <!--                        android:layout_height="300dp"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:background="@drawable/num2"-->
+    <!--                        android:scaleType="fitStart"></ImageView>-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="160dp"-->
+    <!--                        android:layout_height="match_parent"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Food_e"-->
+    <!--                        android:textSize="30dp"-->
+    <!--                        android:textStyle="bold"></TextView>-->
+
+
+    <!--                </LinearLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="350dp"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="200dp"-->
+    <!--                        android:layout_height="300dp"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:background="@drawable/num3"-->
+    <!--                        android:scaleType="fitStart"></ImageView>-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="160dp"-->
+    <!--                        android:layout_height="match_parent"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Food_a"-->
+    <!--                        android:textSize="30dp"-->
+    <!--                        android:textStyle="bold"></TextView>-->
+
+
+    <!--                </LinearLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="350dp"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="200dp"-->
+    <!--                        android:layout_height="300dp"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:background="@drawable/num3"-->
+    <!--                        android:scaleType="fitStart"></ImageView>-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="160dp"-->
+    <!--                        android:layout_height="match_parent"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Food_a"-->
+    <!--                        android:textSize="30dp"-->
+    <!--                        android:textStyle="bold"></TextView>-->
+
+
+    <!--                </LinearLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="350dp"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                app:cardCornerRadius="20dp"-->
+    <!--                app:cardElevation="20dp">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="200dp"-->
+    <!--                        android:layout_height="300dp"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:background="@drawable/num3"-->
+    <!--                        android:scaleType="fitStart"></ImageView>-->
+
+    <!--                    <TextView-->
+    <!--                        android:layout_width="160dp"-->
+    <!--                        android:layout_height="match_parent"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_margin="5dp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="Food_a"-->
+    <!--                        android:textSize="30dp"-->
+    <!--                        android:textStyle="bold"></TextView>-->
+
+
+    <!--                </LinearLayout>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </HorizontalScrollView>-->
