@@ -28,7 +28,7 @@ public class avplayer extends AppCompatActivity {
 //        fgmt.add(R.id.s_R_L_contaner , new audio());
 //        fgmt.commit();
 
-        load(new video(), 1);
+        load(new audio(), 1);
 
         audio.setOnClickListener(new View.OnClickListener() {
             @Override
