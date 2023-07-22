@@ -1,7 +1,6 @@
-package com.example.all_in_one;
+package com.example.all_in_one.R_S_L;
 
 public class model {
-
     int img;
     String name;
 

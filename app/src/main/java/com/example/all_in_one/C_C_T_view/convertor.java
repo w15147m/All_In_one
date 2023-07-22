@@ -65,7 +65,7 @@ public class convertor extends Fragment {
 
 
 
-               Toast.makeText(getActivity(), "aasdfasf", Toast.LENGTH_SHORT).show();
+//               Toast.makeText(getActivity(), "aasdfasf", Toast.LENGTH_SHORT).show();
 
 
 
