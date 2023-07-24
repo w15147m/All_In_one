@@ -30,7 +30,7 @@ public class video extends Fragment {
         VideoView videoView = view.findViewById(R.id.videoview);
 //        videoView = findViewById(R.id.video);
 
-        String videopath ="android.resource://"+ getContext().getPackageName() + "/" +R.raw.mola;
+        String videopath ="android.resource://"+ getContext().getPackageName() + "/" +R.raw.xml;
         Uri uri = Uri.parse(videopath);
         videoView.setVideoURI(uri);
 

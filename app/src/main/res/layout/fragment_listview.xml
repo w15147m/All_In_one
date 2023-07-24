@@ -4,15 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".R_S_L.listview">
+    android:background="@drawable/imagesback"
+    android:orientation="horizontal"
+    tools:context=".R_S_L.listview"
+    tools:ignore="DisableBaselineAlignment">
 
-    <ListView
-        android:id="@+id/listview"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#AD399EEF"
-        tools:ignore="MissingConstraints"></ListView>
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#752196F3"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Lsit View"
+            android:textColor="@color/white"
+            android:textSize="20dp"></TextView>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+
+        </ListView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#752196F3"
+                android:gravity="center_horizontal"
+                android:padding="6dp"
+                android:text="AutoCTextView"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:hint=" Search"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#752196F3"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="spenner"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/sprinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="TouchTargetSizeCheck">
+
+
+            </Spinner>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
 </LinearLayout>

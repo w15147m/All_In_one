@@ -25,36 +25,17 @@
             android:layout_margin="10dp"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_margin="5dp"
-                android:background="@drawable/radius"
-                android:src="@drawable/img_2"
-                android:thumb="@drawable/thumb"
-                ></ImageView>
+
 
 
             <VideoView
                 android:id="@+id/videoview"
                 android:layout_width="match_parent"
-                android:layout_height="230dp"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="5dp"
                 android:background="@drawable/radius"
 
                 />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:text="video"
-                android:textColor="@color/white"
-                android:textSize="15dp"
-                tools:ignore="TextSizeCheck">
-
-            </TextView>
 
 
         </LinearLayout>
