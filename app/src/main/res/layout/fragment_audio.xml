@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/imagesback"
-    android:orientation="vertical"
-    tools:context=".V_A_player.audio">
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -26,9 +25,7 @@
                 android:layout_height="300dp"
                 android:layout_margin="5dp"
                 android:background="@drawable/radius"
-                android:src="@drawable/img_2"
-                android:thumb="@drawable/thumb"
-                ></ImageView>
+                android:src="@drawable/img_2" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -70,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginVertical="10dp"
-                android:src="@drawable/frequency"></ImageView>
+                android:src="@drawable/frequency" />
 
             <SeekBar
                 android:id="@+id/seekBar"
@@ -89,29 +86,29 @@
                 android:gravity="center_horizontal"
                 android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/playback"
+                <Button
+                    android:id="@+id/playb"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:background="@drawable/fast_rewind"
-                    tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+                    tools:ignore="SpeakableTextPresentCheck" />
 
-                <ImageButton
-                    android:id="@+id/play1"
+                <Button
+                    android:id="@+id/play"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginHorizontal="50dp"
                     android:background="@drawable/play_1"
                     tools:ignore="SpeakableTextPresentCheck"
 
-                    ></ImageButton>
+                    />
 
-                <ImageButton
-                    android:id="@+id/playforword"
+                <Button
+                    android:id="@+id/playf"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:background="@drawable/fast_forward"
-                    tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+                    tools:ignore="SpeakableTextPresentCheck" />
 
 
             </LinearLayout>
