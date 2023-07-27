@@ -22,7 +22,7 @@ public class CCTView extends AppCompatActivity {
         btn1 = findViewById(R.id.btn1);
         btn2 = findViewById(R.id.btn2);
         btn3 = findViewById(R.id.btn3);
-        load(new calculator() ,1);
+        load(new convertor() ,1);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

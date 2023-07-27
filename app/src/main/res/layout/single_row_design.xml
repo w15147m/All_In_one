@@ -1,58 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-   android:id="@+id/cardview"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_height="wrap_content"
-    app:cardUseCompatPadding="true"
-    app:cardCornerRadius="10dp"
-        app:cardElevation="10dp"
-    android:background="@color/wizzxcte">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="4dp"
+    app:cardUseCompatPadding="true">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
-    <ImageView
-        android:id="@+id/img1"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/img">
-
-    </ImageView>
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp">
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/ic_launcher" />
 
         <TextView
-            android:id="@+id/ta1"
+            android:id="@+id/t1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Header"
-              android:textSize="20dp"
-            android:layout_margin="10dp"
+            android:text="This is Header Text"
+            android:layout_marginLeft="4dp"
+            android:textColor="#000"
+            android:textSize="25dp"
             android:textStyle="bold"
-            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/img1"
+            android:gravity="center_vertical"
+            />
 
-            ></TextView>
         <TextView
-            android:id="@+id/ta2"
+            android:id="@+id/t2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Description"
-            android:textSize="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/img1"
+            android:layout_below="@+id/t1"
+            android:text="This is Description Text"
+            android:textSize="20dp" />
 
-            ></TextView>
+    </RelativeLayout>
 
-    </LinearLayout>
-</LinearLayout>
-
-
-
-</com.google.android.material.card.MaterialCardView>
+</androidx.cardview.widget.CardView>
