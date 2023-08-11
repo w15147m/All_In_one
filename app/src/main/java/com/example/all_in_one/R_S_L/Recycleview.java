@@ -3,6 +3,7 @@ package com.example.all_in_one.R_S_L;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -35,8 +36,12 @@ public class Recycleview extends Fragment {
                              Bundle savedInstanceState) {
 
         view = inflater.inflate(R.layout.fragment_recycleview, container, false);
+
         recyclerView=view.findViewById(R.id.recview);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+//        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+           GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),2);
+           recyclerView.setLayoutManager(gridLayoutManager);
         dataholder=new ArrayList<>();
         datamodel ob1=new datamodel(R.drawable.angular,"Angular","Web Application");
         dataholder.add(ob1);
