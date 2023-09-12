@@ -1,10 +1,5 @@
 package com.example.all_in_one;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,16 +8,23 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
+
 import com.example.all_in_one.C_C_T_view.CCTView;
 import com.example.all_in_one.R_S_L.S_R_L_View;
 import com.example.all_in_one.V_A_player.avplayer;
 import com.example.all_in_one.fooddata.fdata;
+import com.example.all_in_one.sorting.sorting;
 
 public class
 
 MainActivity2 extends AppCompatActivity {
     Toolbar toolbar;
-    CardView cardView1 , cardView2 , cardView3 , cardView4;
+    CardView cardView1, cardView2, cardView3, cardView4, cardView5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +35,7 @@ MainActivity2 extends AppCompatActivity {
         cardView2 = findViewById(R.id.card2);
         cardView3 = findViewById(R.id.card3);
         cardView4 = findViewById(R.id.card4);
+        cardView5 = findViewById(R.id.card5);
 //        step 1
         setSupportActionBar(toolbar);
         if(getSupportActionBar()!=null){
@@ -71,13 +74,20 @@ MainActivity2 extends AppCompatActivity {
         cardView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity2.this , fdata.class);
+                Intent intent = new Intent(MainActivity2.this, fdata.class);
                 startActivity(intent);
 //                   Toast.makeText(MainActivity2.this, "ali mola", Toast.LENGTH_SHORT).show();
             }
         });
+        cardView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-
+          Intent intent = new Intent(MainActivity2.this , sorting.class);
+                startActivity(intent);
+//                Toast.makeText(MainActivity2.this, "ali mola", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
     }

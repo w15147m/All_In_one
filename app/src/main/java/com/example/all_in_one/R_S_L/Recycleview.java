@@ -39,9 +39,9 @@ public class Recycleview extends Fragment {
 
         recyclerView=view.findViewById(R.id.recview);
 
-//        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-           GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),2);
-           recyclerView.setLayoutManager(gridLayoutManager);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+//           GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),2);
+//           recyclerView.setLayoutManager(gridLayoutManager);
         dataholder=new ArrayList<>();
         datamodel ob1=new datamodel(R.drawable.angular,"Angular","Web Application");
         dataholder.add(ob1);

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/imagesback"
+    android:layout_height="match_parent"
+    tools:context=".sorting.sorting">
+    <FrameLayout
+        android:id="@+id/sorting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="12"
+        android:layout_margin="5dp"
+        ></FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="5dp"
+        >
+
+        <Button
+            android:id="@+id/bubblel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E82196F3"
+            android:text="Bubble"
+            tools:ignore="TouchTargetSizeCheck"/>
+        <Button
+            android:id="@+id/selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E82196F3"
+            android:text="Selection"
+            tools:ignore="TouchTargetSizeCheck"/>
+        <Button
+            android:id="@+id/insertion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E82196F3"
+            android:text="insertion"
+            tools:ignore="TouchTargetSizeCheck">
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -60,8 +60,6 @@ public class S_R_L_View extends AppCompatActivity {
         }else {
 
             tscroll.replace(R.id.s_R_L_contaner,fragment);
-
-
         }
         tscroll.commit();
 

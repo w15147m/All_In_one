@@ -80,6 +80,7 @@ public class listview extends Fragment {
         arrSName.add("cnic card");
         arrSName.add("Atm card");
         arrSName.add("school card");
+
         arrSName.add("voter card ");
         arrSName.add("Driving license card");
         arrSName.add("Rastion card");
