@@ -13,6 +13,15 @@
         android:theme="@style/Theme.All_In_One"
         tools:targetApi="31">
         <activity
+            android:name=".splash"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".fooddata.getdata"
             android:exported="false" />
         <activity
@@ -36,30 +45,22 @@
         <activity
             android:name=".C_C_T_view.CCTView"
             android:exported="false" />
-        <activity
+    <!--    <activity
             android:name=".L_C_C_view.LCCactivity"
             android:exported="false" />
         <activity
             android:name=".calculator.calculator"
-            android:exported="false" />
+            android:exported="false" />-->
         <activity
             android:name=".R_S_L.S_R_L_View"
             android:exported="true" />
         <activity
             android:name=".MainActivity2"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
 
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
