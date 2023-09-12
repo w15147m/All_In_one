@@ -14,7 +14,8 @@ import com.example.all_in_one.R;
 import com.example.all_in_one.V_A_player.video;
 
 public class CCTView extends AppCompatActivity {
-     Button btn1 , btn2 , btn3;
+    Button btn1, btn2, btn3, bmi;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +23,8 @@ public class CCTView extends AppCompatActivity {
         btn1 = findViewById(R.id.btn1);
         btn2 = findViewById(R.id.btn2);
         btn3 = findViewById(R.id.btn3);
-        load(new convertor() ,1);
+        bmi = findViewById(R.id.bmi);
+        load(new convertor(), 1);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,10 +36,18 @@ public class CCTView extends AppCompatActivity {
 //                agt.commit();
 ////                Toast.makeText(CCTView.this, "ali mola 1", Toast.LENGTH_SHORT).show();
 //
-                load(new calculator() ,1);
+                load(new calculator(), 1);
             }
         });
-
+        bmi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager bmi = getSupportFragmentManager();
+                FragmentTransaction ft = bmi.beginTransaction();
+                ft.add(R.id.s_R_L_contaner, new BMI());
+                ft.commit();
+            }
+        });
 
 
         btn2.setOnClickListener(new View.OnClickListener() {
@@ -51,11 +61,9 @@ public class CCTView extends AppCompatActivity {
 
 //                Toast.makeText(CCTView.this, "ali mola 2", Toast.LENGTH_SHORT).show();
 
-        load(new convertor(),1);
+                load(new convertor(), 1);
             }
         });
-
-
 
 
         btn3.setOnClickListener(new View.OnClickListener() {
@@ -73,24 +81,21 @@ public class CCTView extends AppCompatActivity {
     }
 
 
-    public void load(Fragment fragment , int num){
+    public void load(Fragment fragment, int num) {
         FragmentManager fgm = getSupportFragmentManager();
         FragmentTransaction agt = fgm.beginTransaction();
 
-        if(num==0){
-            agt.add(R.id.s_R_L_contaner,fragment);
-        }else {
+        if (num == 0) {
+            agt.add(R.id.s_R_L_contaner, fragment);
+        } else {
 
-            agt.replace(R.id.s_R_L_contaner,fragment);
+            agt.replace(R.id.s_R_L_contaner, fragment);
 
 
         }
 
 
-
-
         agt.commit();
-
 
 
     }

@@ -16,13 +16,12 @@ import com.example.all_in_one.R;
 
 
 public class datapass extends Fragment {
-View view;
-EditText editTextname , editTextemail  , editTextphone;
+    View view;
+    EditText editTextname, editTextemail, editTextphone;
 
     public datapass() {
         // Required empty public constructor
     }
-
 
 
     @Override
@@ -32,11 +31,10 @@ EditText editTextname , editTextemail  , editTextphone;
         view = inflater.inflate(R.layout.fragment_datapass, container, false);
 
 
-        Button  button = view.findViewById(R.id.buttonp);
+        Button button = view.findViewById(R.id.buttonp);
         editTextname = view.findViewById(R.id.etname);
         editTextemail = view.findViewById(R.id.ete);
         editTextphone = view.findViewById(R.id.etnum);
-
 
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -48,9 +46,9 @@ EditText editTextname , editTextemail  , editTextphone;
                 String phone = editTextphone.getText().toString();
 
                 Intent intent = new Intent(getActivity(), getdata.class);
-                intent.putExtra("name" , name);
-                intent.putExtra("phone" , phone);
-                intent.putExtra("email" , email);
+                intent.putExtra("name", name);
+                intent.putExtra("phone", phone);
+                intent.putExtra("email", email);
                 startActivity(intent);
 
 
@@ -61,18 +59,7 @@ EditText editTextname , editTextemail  , editTextphone;
         });
 
 
-
-
-
-
-
-
-
-
-
-
-
-    return  view;
+        return view;
     }
 
 

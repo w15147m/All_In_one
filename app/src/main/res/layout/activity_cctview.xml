@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+
     android:background="@drawable/imagesback"
     android:layout_height="match_parent"
     tools:context=".R_S_L.S_R_L_View">
@@ -12,41 +13,51 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:gravity="center"
         android:layout_marginTop="5dp"
         >
 
         <Button
             android:id="@+id/btn1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_height="45dp"
+
             android:backgroundTint="#E82196F3"
-            android:text="calculator"
+            android:text="calculat"
 
 
-            tools:ignore="TouchTargetSizeCheck"></Button>
+            tools:ignore="TouchTargetSizeCheck"/>
+
+
         <Button
             android:id="@+id/btn2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#E82196F3"
-            android:layout_marginHorizontal="3dp"
+            android:layout_height="45dp"
 
-            android:text="convertor"
-            tools:ignore="TouchTargetSizeCheck"></Button>
+            android:backgroundTint="#E82196F3"
+
+
+            android:text="convert"
+            tools:ignore="TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:backgroundTint="#E82196F3"
+
+
+            android:text="BMI"
+            tools:ignore="TouchTargetSizeCheck" />
         <Button
             android:id="@+id/btn3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_height="45dp"
+
             android:backgroundTint="#E82196F3"
 
             android:text="tsbh"
-            tools:ignore="TouchTargetSizeCheck">
+            tools:ignore="TouchTargetSizeCheck"/>
 
-        </Button>
 
     </LinearLayout>
 
