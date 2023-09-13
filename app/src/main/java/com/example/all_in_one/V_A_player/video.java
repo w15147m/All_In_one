@@ -28,7 +28,7 @@ public class video extends Fragment {
       View view= inflater.inflate(R.layout.fragment_video, container, false);
 
         VideoView videoView = view.findViewById(R.id.videoview);
-//        videoView = findViewById(R.id.video);
+
 
         String videopath ="android.resource://"+ getContext().getPackageName() + "/" +R.raw.xml;
         Uri uri = Uri.parse(videopath);
@@ -37,27 +37,6 @@ public class video extends Fragment {
         MediaController mediaController = new MediaController(getContext());
         videoView.setMediaController(mediaController);
         mediaController.setAnchorView(videoView);
-
-
-
-
-
-
-
-
-
-//        String videopath ="android.resource://"+getPackageName() + "/" +R.raw.ali;
-//        Uri uri = Uri.parse(videopath);
-//        videoView.setVideoURI(uri);
-//
-//        MediaController mediaController = new MediaController(this);
-//        videoView.setMediaController(mediaController);
-//        mediaController.setAnchorView(videoView);
-
-
-
-
-
 
       return view;
     }

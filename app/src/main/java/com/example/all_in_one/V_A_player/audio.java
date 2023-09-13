@@ -45,17 +45,12 @@ public class audio extends Fragment {
                 if (player == null) {
 
                     player = MediaPlayer.create(getActivity(), R.raw.song_3);
-//                    player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-//                        @Override
-//                        public void onCompletion(MediaPlayer mp) {
-//                            setPlayer();
-//                        }
-//                    });
+
 
                 }else {
 
                     player.release();
-//                    player = null;
+
 
                 }
                 player.start();
@@ -87,48 +82,4 @@ public class audio extends Fragment {
 
 
         return view;
-    }
-//
-//    public void play(View v) {
-//        if (player == null) {
-//
-//            player = MediaPlayer.create(getActivity(), R.raw.song_3);
-//            player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-//                @Override
-//                public void onCompletion(MediaPlayer mp) {
-//                    setPlayer();
-//                }
-//            });
-//
-//        }
-//        player.start();
-//    }
-//
-//    public void pause(View v) {
-//        if (player != null) {
-//
-//            player.stop();
-//        }
-//
-//    }
-//
-//    public void stop(View v) {
-//        setPlayer();
-//    }
-//
-//    public void setPlayer() {
-//        if (player != null) {
-//
-//            player.release();
-//            player = null;
-//
-//        }
-//
-//    }
-//
-//    @Override
-//    public void onStop() {
-//        super.onStop();
-//        setPlayer();
-//    }
-}
+    }}
